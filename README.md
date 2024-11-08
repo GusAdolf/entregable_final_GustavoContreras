@@ -6,3 +6,4 @@
 
 
 `Como sugerencia se puede poner como animal fav  perro - gato -oso`
+![alt text](image.png)
