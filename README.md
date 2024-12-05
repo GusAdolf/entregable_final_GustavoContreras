@@ -1,5 +1,6 @@
 # Examen final Gustavo Contreras
 
+#### Dirigirse a la ruta /entregable_final_GustavoContreras y desde ahi digitar los comando que esta en la parte inferior para bajarse las dependecias y que la aplicacion funcione.
 `npm install react-router-dom`
 `npm install vitest @testing-library/react @testing-library/jest-dom @testing-library/user-event`
 
