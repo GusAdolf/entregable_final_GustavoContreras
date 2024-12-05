@@ -1,0 +1,26 @@
+.cartSection {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cartGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .clearButton {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #00b140;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .clearButton:hover {
+    background-color:#00b140;
+  }
+  

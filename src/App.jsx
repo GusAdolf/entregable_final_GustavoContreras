@@ -1,31 +1,29 @@
-import React, { useState } from 'react';
-import Form from './components/Form';
-import Card from './components/Card';
-import styles from './App.module.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/home/Home";
+import Product from "./pages/product/Product";
+import Contact from "./pages/contact/Contact";
+import Cart from "./pages/cart/Cart";
+import CharacterDetails from "./pages/character/CharacterDetails";
+import { CartProvider } from "./context/CartContext"; 
 
-function App() {
-  const [submittedData, setSubmittedData] = useState(null);
-
-  // Función para manejar el envío del formulario
-  const handleFormSubmit = (data) => {
-    // Limpiar cualquier tarjeta previa antes de asignar nuevos datos
-    setSubmittedData(null);
-    setTimeout(() => {
-      setSubmittedData(data);
-    }, 0);
-  };
-
+const App = () => {
   return (
-    <div className={styles.app}>
-      <h1>Parcial Gustavo Contreras</h1>
-      <h2>Elige tu animal favorito ej Perro</h2>
-      <Form onSubmit={handleFormSubmit} />
+    <CartProvider>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/character/:id" element={<CharacterDetails />} />
+          <Route path="/cart" element={<Cart />} />
 
-      {submittedData && (
-        <Card animal={submittedData.animal} description={submittedData.description} />
-      )}
-    </div>
+        </Routes>
+      </Router>
+    </CartProvider>
   );
-}
+};
 
 export default App;

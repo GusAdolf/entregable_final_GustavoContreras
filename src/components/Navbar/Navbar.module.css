@@ -1,0 +1,31 @@
+.navbar {
+    background-color: #00b140; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: "Rick and Morty", sans-serif;
+  }
+  
+  .navLinks {
+    display: flex;
+    list-style: none;
+    margin: 0;
+  }
+  
+  .link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+  }
+  
+  .link:hover {
+    color: #ffcc00; 
+  }
+  

@@ -1,0 +1,55 @@
+.contactSection {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contactForm label {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contactForm input:focus,
+  .contactForm textarea:focus {
+    outline: none;
+    border-color: #00b140;
+    box-shadow: 0 0 5px #00b140;
+  }
+  
+  .submitButton {
+    background-color: #00b140;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submitButton:hover {
+    background-color: #00b140;
+  }
+  
+  .successMessage {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
